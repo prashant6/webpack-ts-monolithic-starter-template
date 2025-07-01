@@ -20,6 +20,7 @@ export default [
       '*.config.ts',
       'vite.config.*',
       'webpack.config.*',
+	  'webpack.*.js',
       'coverage/**',
 	  '.prettierrc.js'
     ],
