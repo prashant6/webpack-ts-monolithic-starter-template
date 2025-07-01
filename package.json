@@ -7,8 +7,7 @@
     "dev": "cross-env webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "cross-env webpack --config webpack/webpack.config.js --env env=prod",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "prepare": "husky"
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "repository": {
     "type": "git",
@@ -33,7 +32,6 @@
     "@types/react-dom": "^19.1.6",
     "@typescript-eslint/eslint-plugin": "^8.35.1",
     "@typescript-eslint/parser": "^8.35.1",
-    "autoprefixer": "^10.4.21",
     "babel-loader": "^10.0.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "clean-webpack-plugin": "^4.0.0",
@@ -54,11 +52,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "mini-css-extract-plugin": "^2.9.2",
-    "postcss": "^8.5.6",
-    "postcss-import": "^16.1.1",
     "postcss-loader": "^8.1.1",
-    "postcss-nested": "^7.0.2",
-    "postcss-preset-env": "^10.2.4",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5",
@@ -75,18 +69,5 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-refresh": "^0.17.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": [
-      "eslint --fix"
-    ],
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
   }
 }
