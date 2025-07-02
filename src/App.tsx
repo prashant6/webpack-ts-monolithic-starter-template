@@ -1,6 +1,6 @@
-import Test from '@components/Test'
+import Test from '@components/common/Test'
 
-import spiderman from './assets/spiderman.png'
+import spiderman from './assets/images/spiderman.png'
 import './styles/app.module.css'
 
 function App() {
